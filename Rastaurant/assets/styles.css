@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #ff833e;
+  --primary-color-dark: #db6f35;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Bebas Neue", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--primary-color);
+  }
+
+p {
+    color: var(--text-dark);
+}
+  
+  .sectionSubheader {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--text-light);
+  }
+
+.sectionContainer {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+button {
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+button:hover {
+    color: var(--primary-color-dark);
+    background-color: var(--white);
+    border: 2px solid var(--primary-color-dark);
+    cursor: pointer;
+}
+
+.btnactive {
+    background-color: var(--white);
+    border: 2px solid var(--primary-color-dark);
+    color: var(--primary-color);
+
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 5rem;
+  }
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo .logo_text {
+    color: var(--primary-color-dark);
+}
+
+ul  {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navItems a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--primary-color)
+  }
+  
+.navItems a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+.navItems a:hover::after {
+    width: 50%;
+  }
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.rightSide {
+    position: relative;
+}
+
+.rightSide img {
+    border-radius: 50%;
+}
+
+span img {
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+
+.lbtns {
+    margin-top: 20px;
+}
