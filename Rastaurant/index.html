@@ -6,6 +6,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -27,9 +28,9 @@
         </div>
     </nav>
     <section class="heroSection sectionContainer sectionHeader">
-        <div class="leftSide">
-            <p>Best Pizza Restauran in Town</p>
-            <h1>The Tastiest and Best Pizza Restaurant in the Whole of America </h1>
+        <div class="leftSide" >
+            <p  data-aos="fade-up" >Best Pizza Restauran in Town</p>
+            <h1  data-aos="fade-up" >The Tastiest and Best Pizza Restaurant in the Whole of America </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Facilis unde obcaecati dignissimos quaerat, libero, aperiam quos 
                 vitae dolor ad!</p>
@@ -45,7 +46,7 @@
             <span><img class="backgroundimg" src="assets/images/header-bg.png" alt=""></span>
         </div>
     </section>
-    <section class="locations">
+    <section class="locations" data-aos="zoom-in"  data-aos-duration="1100">
         <p>We are across the Globe</p>
         <h1>Lorem ipsum dolor sit amet consectetur elit</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laudantium cupiditate quis sed, nulla tenetur quibusdam quia necessitatibus  porro veniam cum sequi consequuntur nulla omnis?</p>
@@ -55,39 +56,34 @@
         <p>We have every pizza!</p>
         <h1>Pizzas we serve:</h1>
         <div class="pizzaDivision">
-            <div class="pizzaLeft">
-                <img src="assets/images/pizza.jpg" alt="" height="400px" width="700px">
-                <h2>Type of Pizza</h2>
-                <p>A berief description of the pizza</p>
-                <button>Place Order</button>
-            </div>
-            <div class="contentPizzaTypes">
+            <div class="contentPizzaTypes" data-aos="zoom-in"  data-aos-duration="1100">                
                 <div class="pizza">
-                    <img src="assets/images/pizza.jpg" alt="" height="150px" width="100px">
+                    <img src="assets/images/pizza.jpg" alt="" height="150px" width="10px">
                     <h2>Type of Pizza</h2>
                     <p>A berief description of the pizza</p>
                     <button>Place Order</button>
+                    <button class="btnactive">ingredients</button>
                 </div>
                 <div class="pizza">
                     <img src="assets/images/pizza.jpg" alt="" height="150px" width="10px">
                     <h2>Type of Pizza</h2>
                     <p>A berief description of the pizza</p>
                     <button>Place Order</button>
+                    <button class="btnactive">ingredients</button>
                 </div>
-                <div class="pizza">
+                <div class="pizza" >
                     <img src="assets/images/pizza.jpg" alt="" height="150px" width="10px">
                     <h2>Type of Pizza</h2>
                     <p>A berief description of the pizza</p>
                     <button>Place Order</button>
-                </div>
-                <div class="pizza">
-                    <img src="assets/images/pizza.jpg" alt="" height="150px" width="10px">
-                    <h2>Type of Pizza</h2>
-                    <p>A berief description of the pizza</p>
-                    <button>Place Order</button>
+                    <button class="btnactive">ingredients</button>
                 </div>
         </div>
     </section> 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

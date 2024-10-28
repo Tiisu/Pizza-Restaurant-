@@ -187,16 +187,20 @@ span img {
   padding: 20px;
 }
 
+.pizza h2, .pizza p {
+  margin-bottom: 20px;
+}
+
 .contentPizzaTypes {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 21px;
 }
 
 .pizzaDivision {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  align-items: center;
 
 }
 
