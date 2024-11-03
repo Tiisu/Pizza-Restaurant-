@@ -272,6 +272,47 @@ span img {
   margin-bottom: 2rem;
 }
 
+form {
+  background-color: var(--extra-light);
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(44, 41, 41, 0.1);
+  cursor: pointer;
+}
+form .container {
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 @media (width < 900px) {
   .testimonials__grid {
