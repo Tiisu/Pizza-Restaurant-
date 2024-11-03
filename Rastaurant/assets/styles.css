@@ -393,7 +393,37 @@ input[type=submit]:hover {
   color: var(--text-dark);
 }
 @media (max-width: 768px) {
-  
+  nav .navBtn {
+    display: none;
+  }
+
+  .heroSection {
+    display: inline;
+    text-align: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    }
+  .heroSection h1, .heroSection p {
+      text-align: center;
+    }
+  .leftSide, .rightSide {
+    margin-bottom: 50px;
+  }
+
+  .locations {
+    padding: 20px 10px;
+    border-radius: 50px;
+  }
+.testimonials__grid {
+  display: inline;
+}
+
+.newsletter {
+  display: inline;
+}
+.newsletterRight {
+  margin-bottom: 50px;
+}
   .footer {
     position: relative;
     bottom: 0;
