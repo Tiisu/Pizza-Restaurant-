@@ -314,17 +314,105 @@ input[type=submit]:hover {
   gap: 10px;
 }
 
-@media (width < 900px) {
-  .testimonials__grid {
-    grid-template-columns: repeat(2, 1fr);
+.footer {
+  top: 50%;
+  left: 50%;
+  background: #F3F5F7;
+  border-radius: 6px;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+  display: inline;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+.footer-col .links li a:hover {
+  color: var(--primary-color);
+}
+.footer-col p {
+  margin: 20px 0;
+  color: var(--text-dark);
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--primary-color) ;
+  caret-color: var(--primary-color);
+  color: var(--text-dark);
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: var(--text-dark);
+}
+ .footer-col form button {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: var(--primary-color);
+}
+.footer-col .icons i:hover  {
+  color: var(--text-dark);
+}
+@media (max-width: 768px) {
+  
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer .footer-row {
+    padding: 20px;
     gap: 1rem;
   }
-}
-
-@media (width < 600px) {
-  .testimonials__grid {
-    grid-template-columns: repeat(1, 1fr);
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
   }
 }
-
-
