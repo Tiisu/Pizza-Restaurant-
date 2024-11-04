@@ -392,7 +392,7 @@ input[type=submit]:hover {
 .footer-col .icons i:hover  {
   color: var(--text-dark);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   nav .navBtn {
     display: none;
   }
@@ -408,6 +408,10 @@ input[type=submit]:hover {
     }
   .leftSide, .rightSide {
     margin-bottom: 50px;
+  }
+
+  .below_testimonial {
+    margin-top: 100px;
   }
 
   .locations {
