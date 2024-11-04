@@ -130,6 +130,10 @@ ul  {
     width: 50%;
   }
 
+.navItems .icon {
+  display: none;
+}
+
 .heroSection {
     display: flex;
     align-items: center;
