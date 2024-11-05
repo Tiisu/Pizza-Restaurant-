@@ -421,20 +421,20 @@ input[type=submit]:hover {
     margin-top: 100px;
   }
 
-  .locations {
+   .locations {
     padding: 20px 10px;
     border-radius: 50px;
-  }
-.testimonials__grid {
-  display: inline;
-}
+   }
+   .testimonials__grid {
+    display: inline;
+   }
 
-.newsletter {
+  .newsletter {
   display: inline;
-}
-.newsletterRight {
+  }
+  .newsletterRight {
   margin-bottom: 50px;
-}
+  }
   .footer {
     position: relative;
     bottom: 0;
