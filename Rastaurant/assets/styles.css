@@ -397,6 +397,73 @@ input[type=submit]:hover {
   color: var(--text-dark);
 }
 @media (max-width: 768px) {
+  body {
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  nav .navBtn {
+    display: block; /* Show navigation button on smaller screens */
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .leftSide, .rightSide {
+    margin-bottom: 30px;
+  }
+
+  .below_testimonial {
+    margin-top: 50px;
+  }
+
+  .locations {
+    padding: 15px 8px;
+    border-radius: 40px;
+  }
+
+  .testimonials__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletterRight {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    position: static; /* Remove unnecessary positioning */
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 15px;
+    gap: 0.5rem;
+  }
+
+  .footer-col form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+    }
+/*
+@media (max-width: 768px) {
   body { 
     padding: 30px;
   }
@@ -457,3 +524,4 @@ input[type=submit]:hover {
     margin: 10px 0 0 0;
   }
 }
+*/
